@@ -67,83 +67,99 @@ a {
 /* HEADER */
 header {
     /*border: 2px solid red;*/
-    padding: 2rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    background: var(--pure-white-clr);
+    z-index: 50;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header-nav {
+.container-nav {
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem 3rem;
     margin: 0 auto;
 }
 
-.nav-link-list {
+.nav-list {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.nav-link-list li a {
+.nav-list a {
     color: var(--gray-text-clr);                            
-    font-size: 1.1rem;
-
+    font-size: 1.125rem;
+    font-weight: 500;
 }
 
-.header-nav .download-btn {
-   position: absolute;
-   right: 0;
-   padding: 0.75rem 1.25rem;
+.nav-list a:hover {
+    color: var(--dark-txt-clr);
+}
+
+.nav-list a span {
+    color: var(--dark-txt-clr);
+}
+
+.cta .download-btn {
+   padding: 0.75rem 1.5rem;
    background-color: var(--light-green-clr);
    color: var(--pure-white-clr);
    border: none;
-   font-size: 1.25rem;
+   font-size: 1.125rem;
+   font-weight: 600;
    border-radius: 0.5rem;
 }
 
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.cta .download-btn:hover,
+.hero-section .download-btn:hover {
+    background-color: #006d5b;
+}
+
+/* HERO SECTION */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
     text-align: center;
 }
 
-.hero-text {
-   margin-bottom: 2rem;
-}
-
-.hero-text h2 {
+.hero-title {
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.hero-text span {
+.hero-title span {
     color: var(--light-green-clr);
 }
 
-.hero-text p {
+.hero-subtitle {
+    color: #555;
     font-size: 1.2rem;
+    max-width: 650px;
+    margin: 0 auto 3rem;
 }
 
 .hero-img {
     margin-bottom: 2rem;
-    border-radius: 0.5rem;
-    width: 800px;
+    border-radius: 1rem;
+    width: 900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero-cta h2 {
+.hero-cta-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.hero-cta .download-btn {
-    padding: 0.75rem 1.25rem;
+.hero-section .download-btn {
+    padding: 0.75rem 1.5rem;
     background-color: var(--light-green-clr);
     color: var(--pure-white-clr);
     border: none;
     font-size: 1.25rem;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
 }
+
 
