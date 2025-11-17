@@ -98,10 +98,6 @@ header {
     color: var(--dark-txt-clr);
 }
 
-.nav-list a span {
-    color: var(--dark-txt-clr);
-}
-
 .cta .download-btn {
    padding: 0.75rem 1.5rem;
    background-color: var(--light-green-clr);
@@ -143,9 +139,13 @@ header {
 
 .hero-img {
     margin-bottom: 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     width: 900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
 }
 
 .hero-cta-title {
@@ -160,6 +160,57 @@ header {
     border: none;
     font-size: 1.25rem;
     border-radius: 0.75rem;
+}
+
+/* FOOTER SECTION */
+footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 4rem 2rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*border: 3px solid goldenrod;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.footer-branding img ,
+.footer-branding p{
+   margin-bottom: 0.75rem;
+}
+
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.footer-item ul li{
+    margin-bottom: 0.4rem;
+}
+
+.footer-item ul li a {
+    color: var(--dark-txt-clr);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-socials i {
+    color: var(--pure-white-clr);
+    background-color: var(--light-green-clr);
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    border-radius: 50%;
 }
 
 
