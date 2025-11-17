@@ -213,4 +213,8 @@ footer {
     border-radius: 50%;
 }
 
+.footer-socials i:hover {
+    background-color: #006d5b;
+}
+
 
