@@ -275,7 +275,7 @@ footer {
    }
 
    .footer-container{
-    flex-wrap: wrap;
+    flex-direction: column;
    }
 
    .footer-socials {
